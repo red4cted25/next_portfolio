@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-export default NavLink = ({ title, href='/'}) => {
+const NavLink = ({ title, href='/'}) => {
     return (
         <div className="relative group">
             <Link href={href}>{title}</Link>
@@ -8,3 +8,5 @@ export default NavLink = ({ title, href='/'}) => {
         </div>
     )
 }
+
+export default NavLink

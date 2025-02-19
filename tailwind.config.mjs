@@ -11,11 +11,12 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
         'brand-primary': "#942c2c",
-        'brand-secondary': "#00000",
-        'brand-background': "#ffecd7"
+        'brand-primary-dark': "#661515",
+        'brand-secondary': "#000",
+        'brand-background': "#f5f5dc"
       },
       fontFamily: {
-        Astronika: ["Astronika", "ui-sans-serif", "system-ui", "Arial", "sans-serif"],
+        'Astronika': ["Astronika", "ui-sans-serif", "system-ui", "Arial", "sans-serif"],
       },
     },
   },

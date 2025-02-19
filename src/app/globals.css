@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
+  --background: #f5f5dc;
   --foreground: #171717;
 }
 
@@ -17,10 +17,10 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 @font-face {
   font-family: Astronika;
-  src: url('/public/Astronika.otf');
+  src: url('../../public/Astronika.otf');
 }

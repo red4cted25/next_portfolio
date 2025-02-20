@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 const Header = () => {
     return (
-        <header className="flex justify-between items-center sticky top-0 bg-gray-800 pt-2 pl-2">
+        <header className="flex justify-between items-center sticky top-0 bg-gray-800 pt-2 pl-2 z-10">
             <Link href='/'>
                 <Image
                     src="https://res.cloudinary.com/drnaycy06/image/upload/v1739917223/NicoLogo_njsqtc.svg"
@@ -14,7 +14,7 @@ const Header = () => {
                     className="w-28 h-16 cursor-pointer"
                 />
             </Link>
-            <nav className="flex gap-4 mt-2 mr-4 text-white">
+            <nav className="flex gap-6 mt-2 mr-4 text-white font-bold">
                 <NavLink href={"/"} title={"Home"} />
                 <NavLink href={"#about"} title={"About"} />
                 <NavLink href={"#resume"} title={"Resume"} />

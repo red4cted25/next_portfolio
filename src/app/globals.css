@@ -24,3 +24,16 @@ body {
   font-family: Astronika;
   src: url('../../public/Astronika.otf');
 }
+
+/* Scrollbar Style */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #d5d5ad;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #942c2c;
+}

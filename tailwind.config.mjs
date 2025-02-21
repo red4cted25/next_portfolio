@@ -11,8 +11,9 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
         'brand-primary': "#942c2c",
-        'brand-primary-dark': "#661515",
+        'brand-primary-dark': "#3d0d0d",
         'brand-secondary': "#000",
+        'brand-secondary-light': "#1c1c1c",
         'brand-background': "#f5f5dc"
       },
       fontFamily: {

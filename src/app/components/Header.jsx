@@ -1,10 +1,9 @@
 import Image from 'next/image'
-import NavLink from './NavLink'
 import Link from 'next/link'
 
 const Header = () => {
     return (
-        <header className="flex justify-between items-center sticky top-0 bg-gray-800 pt-2 pl-2 z-10">
+        <header className="flex justify-between items-center sticky top-0 bg-brand-secondary-light p-2 z-10">
             <Link href='/'>
                 <Image
                     src="https://res.cloudinary.com/drnaycy06/image/upload/v1739917223/NicoLogo_njsqtc.svg"
@@ -15,11 +14,26 @@ const Header = () => {
                 />
             </Link>
             <nav className="flex gap-6 mt-2 mr-4 text-white font-bold">
-                <NavLink href={"/"} title={"Home"} />
-                <NavLink href={"#about"} title={"About"} />
-                <NavLink href={"#resume"} title={"Resume"} />
-                <NavLink href={"#projects"} title={"Projects"} />
-                <NavLink href={"#contact"} title={"Contact Me"} className={'bg-brand-primary '}/>
+                <div className="relative group rounded-xl p-2">
+                    <Link href='/'>Home</Link>
+                    <span className="absolute left-0 bottom-0 w-full h-[2px] bg-white scale-x-0 group-hover:scale-x-100 transition-transform duration-250 ease-out origin-bottom-right group-hover:origin-bottom-left"></span>
+                </div>
+                <div className="relative group rounded-xl p-2">
+                    <Link href='#about'>About</Link>
+                    <span className="absolute left-0 bottom-0 w-full h-[2px] bg-white scale-x-0 group-hover:scale-x-100 transition-transform duration-250 ease-out origin-bottom-right group-hover:origin-bottom-left"></span>
+                </div>
+                <div className="relative group rounded-xl p-2">
+                    <Link href='#resume'>Resume</Link>
+                    <span className="absolute left-0 bottom-0 w-full h-[2px] bg-white scale-x-0 group-hover:scale-x-100 transition-transform duration-250 ease-out origin-bottom-right group-hover:origin-bottom-left"></span>
+                </div>
+                <div className="relative group rounded-xl p-2">
+                    <Link href='#projects'>Projects</Link>
+                    <span className="absolute left-0 bottom-0 w-full h-[2px] bg-white scale-x-0 group-hover:scale-x-100 transition-transform duration-250 ease-out origin-bottom-right group-hover:origin-bottom-left"></span>
+                </div>
+                <div className="relative group bg-brand-primary rounded-xl p-2">
+                    <Link href='#contact'>Contact Me</Link>
+                    <span className="absolute left-0 bottom-0 w-full h-[2px] bg-white scale-x-0 group-hover:scale-x-100 transition-transform duration-250 ease-out origin-bottom-right group-hover:origin-bottom-left"></span>
+                </div>
             </nav>
         </header>
     )

@@ -38,13 +38,13 @@ export default function Home() {
         </div>
         {/* Skillset */}
         <div className="flex flex-col justify-center gap-4 mt-2 py-8">
-            <div className="flex">
+            <div className="flex flex-col mx-16 md:mx-0 md:justify-around md:flex-row">
               {/* HTML */}
               <div className="radial-progress text-brand-primary text-center" style={{'--value':'100', '--size':'8rem', '--thickness':'.75rem'}} role="progressbar">
                 HTML<br />100%
               </div>
               {/* JavaScript */}
-              <div className="radial-progress text-brand-primary text-center" style={{'--value':'100', '--size':'8rem', '--thickness':'.75rem'}} role="progressbar">
+              <div className="radial-progress text-brand-primary text-center self-end md:self-auto" style={{'--value':'100', '--size':'8rem', '--thickness':'.75rem'}} role="progressbar">
                 JS<br />100%
               </div>
               {/* Express.js */}
@@ -52,7 +52,7 @@ export default function Home() {
                 EJS<br />100%
               </div>
               {/* React */}
-              <div className="radial-progress text-brand-primary text-center" style={{'--value':'100', '--size':'8rem', '--thickness':'.75rem'}} role="progressbar">
+              <div className="radial-progress text-brand-primary text-center self-end md:self-auto" style={{'--value':'100', '--size':'8rem', '--thickness':'.75rem'}} role="progressbar">
                 ReactJS<br />100%
               </div>
               {/* TailwindCSS */}
@@ -60,9 +60,9 @@ export default function Home() {
                 Tailwind<br />95%
               </div>
             </div>
-            <div className="flex">
+            <div className="flex flex-col items-center mx-16 md:justify-around md:flex-row md:mx-32">
               {/* CSS */}
-              <div className="radial-progress text-brand-primary text-center" style={{'--value':'100', '--size':'8rem', '--thickness':'.75rem'}} role="progressbar">
+              <div className="radial-progress text-brand-primary text-center self-end md:self-auto" style={{'--value':'100', '--size':'8rem', '--thickness':'.75rem'}} role="progressbar">
                 CSS<br />100%
               </div>
               {/* Node.js */}
@@ -70,7 +70,7 @@ export default function Home() {
                 NodeJS<br />95%
               </div>
               {/* MongoDB */}
-              <div className="radial-progress text-brand-primary text-center" style={{'--value':'80', '--size':'8rem', '--thickness':'.75rem'}} role="progressbar">
+              <div className="radial-progress text-brand-primary text-center self-end md:self-auto" style={{'--value':'80', '--size':'8rem', '--thickness':'.75rem'}} role="progressbar">
                 MongoDB<br />80%
               </div>
               {/* Next.js */}
@@ -83,6 +83,7 @@ export default function Home() {
       {/* Panel 3 */}
       <section className="flex items-center w-full">
         <Marquee className="my-32 text-[35vh] overflow-y-none" autoFill speed={100}>
+          <span className="px-8 text-brand-background" style={{'WebkitTextStroke':'6px #942c2c'}}>PORTFOLIO</span>
           <span className="px-8 text-brand-background" style={{'WebkitTextStroke':'6px #942c2c'}}>PORTFOLIO</span>
         </Marquee>
       </section>

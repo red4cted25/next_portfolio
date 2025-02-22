@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Header from "./components/Header";
 import Marquee from "react-fast-marquee";
+import Project from "./components/Project";
 
 export default function Home() {
 
@@ -16,7 +17,7 @@ export default function Home() {
         </div>
       </section>
       {/* Panel 1 */}
-      <section className="flex flex-col w-full md:flex-row">
+      <section className="flex flex-col w-full md:flex-row" id="about">
         <div className="flex py-10 bg-brand-primary items-center justify-center w-full md:w-1/3">
           <Image
             src="https://res.cloudinary.com/drnaycy06/image/upload/c_crop,w_350,h_350,ar_1:1/v1739913357/bend_zi3sbw.jpg"
@@ -34,7 +35,7 @@ export default function Home() {
       <section className="flex w-full flex-col">
         <div className="ml-6 w-full md:w-2/3">
           <h2 className="text-8xl"><span className="text-6xl">For ...</span><br />Creative Ideas</h2>
-          <p className="text-lg m-4">How much I know in each of my web development skills</p>
+          <p className="text-lg m-4">How much I know in each of my web development skills:</p>
         </div>
         {/* Skillset */}
         <div className="flex flex-col justify-center gap-4 mt-2 py-8">
@@ -82,10 +83,15 @@ export default function Home() {
       </section>
       {/* Panel 3 */}
       <section className="flex items-center w-full">
-        <Marquee className="my-32 text-[35vh] overflow-y-none" autoFill speed={100}>
+        <Marquee className="my-32 text-[35vh] overflow-y-none" autoFill speed={150}>
           <span className="px-8 text-brand-background" style={{'WebkitTextStroke':'6px #942c2c'}}>PORTFOLIO</span>
-          <span className="px-8 text-brand-background" style={{'WebkitTextStroke':'6px #942c2c'}}>PORTFOLIO</span>
+          <span className="px-8 text-brand-background" style={{'WebkitTextStroke':'6px #942c2c'}}>RESUME</span>
+          <span className="px-8 text-brand-background" style={{'WebkitTextStroke':'6px #942c2c'}}>PROJECTS</span>
         </Marquee>
+      </section>
+      {/* Panel 4 */}
+      <section className="flex" id="projects">
+        <Project title="Tic Tac Toe" img="https://res.cloudinary.com/drnaycy06/image/upload/c_crop,ar_1:1/v1740210074/e4d572b8-49b2-408e-a109-461bc8016dee.png" desc="A simple project" date="1/11/24" />
       </section>
     </>
   );

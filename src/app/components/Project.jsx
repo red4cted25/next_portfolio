@@ -5,7 +5,7 @@ const Project = ({title, img, desc, date}) => {
         <>
             {/* Project Square */}
             {/* onClick function opens modal from DaisyUI lib */}
-            <div className="w-48 h-48 cursor-pointer hover:scale-105 transition-transform duration-300 ease-in-out flex flex-col justify-between" style={{backgroundImage: `url(${img})`, backgroundSize: 'cover'}} onClick={()=>document.getElementById('my_modal_3').showModal()}>
+            <div className="w-4/5 h-96 m-2 cursor-pointer hover:scale-105 transition-transform duration-300 ease-in-out flex flex-col justify-between md:w-1/6 md:h-64" style={{backgroundImage: `url(${img})`, backgroundPosition: 'center', backgroundSize: 'cover'}} onClick={()=>document.getElementById('my_modal_3').showModal()}>
                 <div className="bg-brand-secondary/70 text-center text-brand-background py-2">{title}</div>
                 <div className="bg-brand-secondary/70 text-center text-brand-background py-1">{date}</div>
             </div>

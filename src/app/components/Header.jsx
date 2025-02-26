@@ -31,7 +31,7 @@ const Header = () => {
                     <span className="absolute left-0 bottom-0 w-full h-[2px] bg-white scale-x-0 group-hover:scale-x-100 transition-transform duration-250 ease-out origin-bottom-right group-hover:origin-bottom-left"></span>
                 </div>
                 <div className="relative group bg-brand-primary rounded-xl p-2">
-                    <Link href='#contact'>Contact Me</Link>
+                    <Link href='https://www.linkedin.com/in/nicolas-diaz-6010b9353'>Contact Me</Link>
                     <span className="absolute left-0 bottom-0 w-full h-[2px] bg-white scale-x-0 group-hover:scale-x-100 transition-transform duration-250 ease-out origin-bottom-right group-hover:origin-bottom-left"></span>
                 </div>
             </nav>
